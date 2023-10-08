@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="20dp"
+        android:text="Temperature Converter  App"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/enterTemp"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:hint="Enter Temperature"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:ems="15"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/fToc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginRight="30dp"
+        android:text="Fahrenheit To Celsius"
+        android:background="@color/teal_200"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+    <Button
+        android:id="@+id/cTof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celsius to Fahrenheit"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        >
+    </Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="167dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:text="0 Degrees"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
